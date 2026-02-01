@@ -13,7 +13,11 @@ def run() -> None:
             output_filename = "output.html"
         else:
             output_filename = argv[2]
-        compile_file(filename, output_filename) # Start compiling the file
+        if argv[3] == "" or argv[3] == None:
+            style: str = "--none"
+        else:
+            style: str = argv[3]
+        compile_file(filename, output_filename, style) # Start compiling the file
     else:
         # Print the error message and then exit
         print("[ERROR] No filename entered!")
