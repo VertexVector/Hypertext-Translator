@@ -56,6 +56,11 @@ def compile_file(filename: str, output_filename: str, style: str) -> None:
                 display: block;
                 margin: auto;
             }
+            a {
+                text-align: center;
+                display: block;
+                margin: auto;
+            }
         </style>
 """
     elif style == "--none":
