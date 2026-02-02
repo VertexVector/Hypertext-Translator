@@ -115,6 +115,11 @@ def compile_file(filename: str, output_filename: str, style: str) -> None:
             output += f"            <input type='submit' value='{button}' style='cursor: pointer;'>\n"
 
             output += "        </form>\n" # Finish the output
+        elif tag == "link":
+            splitted_value: list[str] = value.split("!-!") # Split the value
+
+            # Add the link to the output
+            output += f"            <a href='{ splitted_value[0] }'>{ splitted_value[1] }</a>"
         else:
             # Print the error message and then exit program
             print("[ERROR] Unknown tag!")

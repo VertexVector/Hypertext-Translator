@@ -11,6 +11,7 @@ small_header: This is a website written using HT.
 paragraph: Hypertext Translator is a programming language which gets translated into HTML.
 openable: This is an openable!-!An openable is just the details tag in HTML.
 form: username$Enter your username**password$Enter your password!-!Login
+link: link_to_the_website!-!Example website
 ```
 ## How can I use a style?
 The styles are new and because of this there's only a single style. You can use it by adding `--classic-dark` at the end of the compiling command. You can also specify that you don't want a style by adding `--none` at the end of your compiling command but it's useless. You can just not specify the style to get nothing as the style.
@@ -22,3 +23,4 @@ The styles are new and because of this there's only a single style. You can use 
 |`paragraph`|It's `<p>` in HTML.|`paragraph: This is a paragraph.`|
 |`openable`|It's `<details>` and `<summary>` in HTML. The summary and the content is seperated with a `!-!` which is interesting.|`openable: example_summary!-!This is something.`|
 |`form`|It's `<form>` in HTML. You can add inputs like `name$placeholder` and the inputs have to be seperated with a `**`. You must also add submit button like `!-!button_text` at the end.|`form: username$Enter your username**password$Enter your password!-!Login`|
+|`link`|It's `<a>` in HTML. You first have to write the link and write `!-!` and then write the label for the link.|`link: link_of_the_website!-!Example website`|
